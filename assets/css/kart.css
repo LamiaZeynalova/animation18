@@ -1,0 +1,45 @@
+.cards {
+    margin: 200px auto 0;
+    box-shadow: 8px 6px 20px rgb(0, 0, 0);
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    transition: 3s;
+    transform: rotate(-30deg);
+}
+
+.front {
+    background-color:gray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: brown;
+    font-size: 30px;
+    font-style: italic;
+    margin: 0 auto;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.back {
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(90deg);
+    display: flex;
+    justify-content: space-around;
+    color:brown;
+    border: 1px solid gray;
+}
+
+.cards:hover {
+    transform: rotateY(180deg);
+}
